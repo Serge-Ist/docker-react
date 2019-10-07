@@ -7,4 +7,4 @@ servies:
    - docker buid -t seis/docker-react -f Dockerfile.dev .
    
    script:
-     -docker run seis/docker-react npm run test -- --coverage
+      - docker run -e CI=true seis/docker-react npm run test
