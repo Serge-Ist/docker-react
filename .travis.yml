@@ -3,7 +3,7 @@ servies:
   - docker
   
   
- before_install:
+before_install:
    - docker buid -t seis/docker-react -f Dockerfile.dev .
    
    script:
